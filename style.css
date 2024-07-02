@@ -1,0 +1,1178 @@
+:root {
+  --dm-sans: "DM Sans", sans-serif;
+  --inter: "Inter", sans-serif;
+  --text-color: rgb(10, 16, 47);
+  --button-color: rgb(75, 42, 173);
+}
+
+body {
+  font-family: var(--inter);
+  font-size: 1.125rem;
+  color: var(--text-color);
+}
+
+/* button */
+.custom-button {
+  margin-top: -0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  background-color: var(--button-color);
+  color: white;
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  border-radius: 50px;
+  border: solid;
+  border-width: 2px;
+  border-color: black;
+  box-shadow: 0px 5px black;
+  transition-property: all;
+  transition: box-shadow 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-button:hover {
+  box-shadow: 0px 0px black;
+}
+
+/* =======================
+      Navbar
+======================= */
+
+#navbarNav {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+  z-index: 99999;
+}
+
+#login {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Collapse Nav MediaQuery Custom */
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: fixed;
+    padding-top: 5rem;
+    top: 0px;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 75%;
+    height: 100%;
+  }
+
+  .navbar-collapse.collapsing {
+    left: -75%;
+    transition: height 0s ease;
+  }
+
+  .navbar-collapse.show {
+    background-color: white !important;
+    box-shadow: black 0px 0px 10px;
+    left: 0;
+    transition: left 300ms ease-in-out;
+  }
+
+  .navbar-toggler.collapsed~.navbar-collapse {
+    transition: left 500ms ease-in-out;
+  }
+}
+
+/* =======================
+      Navbar
+======================= */
+
+/* =======================
+        banner 1
+======================= */
+#banner1 {
+  gap: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+}
+
+#b1-text {
+  text-align: left;
+  color: var(--text-color);
+}
+
+#b1-text h1 {
+  font-family: var(--dm-sans);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 1.5rem;
+}
+
+#b1-text p {
+  font-size: 1.125rem;
+  line-height: 1.66;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+#banner1-img {
+  height: 500px;
+  width: 500px;
+}
+
+#b1-dog {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* =======================
+        banner 1
+======================= */
+
+/* =======================
+        banner 2
+======================= */
+
+#banner2 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#banner2 h1 {
+  max-width: 100%;
+  font-family: var(--dm-sans);
+  font-size: 1.875rem;
+  line-height: 1.26;
+  font-weight: 800;
+  color: var(--text-color);
+}
+
+#b2-cards {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: bisque;
+}
+
+#b2-cards i {
+  font-size: 59px;
+  margin-bottom: 30px;
+}
+
+#b2-card-text h5 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: var(--text-color);
+}
+
+#b2-card-text p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  opacity: 0.8;
+}
+
+/* =======================
+        banner 2
+======================= */
+
+/* =======================
+        banner 3
+======================= */
+
+#banner3 {
+  gap: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+}
+
+#banner3-img {
+  height: 532px;
+  width: 420px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+  overflow: hidden;
+  border: solid black 7px;
+}
+
+#b3-dog {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#b3-text h1 {
+  font-family: var(--dm-sans);
+  color: var(--text-color);
+  font-weight: 800;
+  font-size: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+
+#b3-text span {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-weight: 700;
+}
+
+#b3-text p {
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+/* =======================
+        banner 3
+======================= */
+
+/* =======================
+        banner 4
+======================= */
+
+#banner4 {
+  max-width: 100dvw;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#banner4 h1 {
+  max-width: 100%;
+  font-family: var(--dm-sans);
+  font-size: 1.875rem;
+  line-height: 1.26;
+  font-weight: 800;
+  color: var(--text-color);
+}
+
+#b4-button-group1,
+#b4-button-group2 {
+  width: 100vw;
+  white-space: nowrap;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+#b4-button-group1 .banner4-btn {
+  animation-name: scrollLeft;
+}
+
+#b4-button-group2 .banner4-btn {
+  animation-name: scrollRight;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-80%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-80%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.banner4-btn {
+  display: inline-block;
+  background-color: blanchedalmond;
+  text-align: center;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: 2px solid black;
+  box-shadow: 0px 3px black;
+  margin-right: 1.5rem;
+  margin-bottom: 0.5rem;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#banner4 p {
+  opacity: 0.8;
+}
+
+/* =======================
+        banner 4
+======================= */
+
+/* =======================
+        banner 5
+======================= */
+
+#banner5 {
+  gap: 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+}
+
+#b5-text {
+  row-gap: 2rem;
+  text-align: center;
+}
+
+#b5-text h1 {
+  max-width: 100%;
+  font-family: var(--dm-sans);
+  font-size: 1.875rem;
+  line-height: 1.26;
+  font-weight: 800;
+  color: var(--text-color);
+  opacity: 1;
+}
+
+#b5-text p {
+  opacity: 0.8;
+}
+
+/* =======================
+        banner 5
+======================= */
+
+/* =======================
+        banner 5 cards
+======================= */
+
+#b5-card-elem {
+  border: none;
+  background-color: bisque;
+  transition: all 200ms;
+}
+
+#b5-card-elem:hover a {
+  color: indigo;
+}
+
+#b5-card-elem:hover .banner5-btn {
+  color: var(--text-color)
+}
+
+#b5-image-box {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#b5-card-elem #b5-image-box img {
+  transition: all 200ms;
+}
+
+#b5-card-elem:hover #b5-image-box img {
+  transform: scale(1.1);
+}
+
+#b5-card-elem a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+#b5-card-elem a:hover {
+  color: indigo;
+}
+
+#b5-card-elem .card-title {
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+#b5-card-elem .banner5-btn {
+  color: var(--text-color);
+  width: 100%;
+  background-color: blanchedalmond;
+  text-align: center;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: 2px solid black;
+  box-shadow: 0px 3px black;
+  transition: background-color 200ms, color 200ms;
+}
+
+#b5-card-elem .banner5-btn:hover {
+  background-color: indigo;
+  color: whitesmoke;
+}
+
+/* =======================
+        banner 5 cards
+======================= */
+
+/* =======================
+        banner 7
+======================= */
+#banner7 {
+  padding: 0%;
+}
+
+#banner7-review {
+  border: none;
+}
+
+#banner7 h1 {
+  max-width: 100%;
+  font-family: var(--dm-sans);
+  font-size: 1.875rem;
+  line-height: 1.26;
+  font-weight: 800;
+  color: var(--text-color);
+}
+
+#banner7-review {
+  padding: 1rem;
+}
+
+#banner7-review span i {
+  color: orange;
+  font-size: 2rem;
+}
+
+#b7-user {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+#b7-user img {
+  border: solid black 3px;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+}
+
+#b7-user span {
+  display: inherit;
+  flex-direction: column;
+}
+
+#b7-user span h5 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+#b7-user span p {
+  font-size: 0.875rem;
+}
+
+/* =======================
+        banner 7
+======================= */
+
+/* =======================
+      banner 8
+======================= */
+
+#banner8 {
+  gap: 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+}
+
+#b8-text h1 {
+  max-width: 100%;
+  font-family: var(--dm-sans);
+  font-size: 1.875rem;
+  line-height: 1.26;
+  font-weight: 800;
+  color: var(--text-color);
+}
+
+#b8-text p {
+  opacity: 0.8;
+}
+
+#accordionExample {
+  border: solid black 3px;
+  border-radius: 10px;
+}
+
+/* =======================
+      banner 8
+======================= */
+
+/* =======================
+      Footer
+======================= */
+
+#footer {
+  color: var(--text-color);
+}
+
+#footer a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+#logo-icon h3 {
+  font-family: var(--dm-sans);
+  font-weight: 900;
+}
+
+#logo-icon i {
+  line-height: 120%;
+  color: burlywood;
+}
+
+#logo-icon h3 {
+  color: saddlebrown;
+}
+
+#logo-icon span {
+  color: burlywood;
+}
+
+#scm-icons a {
+  text-align: justify;
+  font-size: medium;
+  background-color: lightgray;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 200px;
+  transition: all 200ms;
+}
+
+#scm-icons a:hover {
+  background-color: indigo;
+  color: whitesmoke;
+}
+
+/* =======================
+      Footer
+======================= */
+
+#copyright {
+  border-top: solid lightgray 1px;
+}
+
+/* **************************** */
+
+/* =======================
+        Media Queries
+======================= */
+/* small */
+@media screen and (min-width: 640px) and (max-width: 768px) {
+
+  /* .navbar-collapse {
+    padding-top: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 50%;
+    height: 100%;
+    box-shadow: black 10px 10px 100vw;
+  }
+
+  .navbar-collapse.collapsing {
+    left: -75%;
+    transition: height 0s ease;
+  }
+
+  .navbar-collapse.show {
+    background-color: white !important;
+    left: 0;
+    transition: left 300ms ease-in-out;
+  }
+
+  .navbar-toggler.collapsed~.navbar-collapse {
+    transition: left 500ms ease-in-out;
+  } */
+
+  /* =======================
+        banner 1
+======================= */
+  #banner1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #b1-text h1 {
+    font-size: 48px;
+  }
+
+  /* =======================
+        banner 1
+======================= */
+
+  /* =======================
+        banner 2
+  ======================= */
+
+  #banner2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* =======================
+        banner 2
+  ======================= */
+
+  /* =======================
+        banner 3
+  ======================= */
+
+  #banner3 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* =======================
+        banner 3
+  ======================= */
+
+  /* =======================
+        banner 5
+  ======================= */
+
+  #banner5 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* =======================
+                  banner 3
+      ======================= */
+}
+
+/* medium */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* .navbar-collapse {
+    padding-top: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 50%;
+    height: 100%;
+    box-shadow: black 10px 10px 100vw;
+  }
+
+  .navbar-collapse.collapsing {
+    left: -75%;
+    transition: height 0s ease;
+  }
+
+  .navbar-collapse.show {
+    background-color: white !important;
+    left: 0;
+    transition: left 300ms ease-in-out;
+  }
+
+  .navbar-toggler.collapsed~.navbar-collapse {
+    transition: left 500ms ease-in-out;
+  } */
+
+  /* =======================
+        banner 1
+======================= */
+
+  #banner1 {
+    padding-top: 120px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  #b1-text h1 {
+    font-size: 65px;
+  }
+
+  #b1-text p {
+    margin-bottom: 50px;
+  }
+
+  /* =======================
+        banner 1
+======================= */
+
+  /* =======================
+        banner 2
+======================= */
+
+  #banner2 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  #banner2 h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  /* =======================
+        banner 2
+======================= */
+
+  /* =======================
+          banner 3
+  ======================= */
+  #banner3 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  #b3-text h1 {
+    font-size: 2.25rem;
+  }
+
+  /* =======================
+          banner 3
+  ======================= */
+
+  /* =======================
+          banner 4
+  ======================= */
+  #banner4 h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  /* =======================
+        banner 4
+  ======================= */
+
+  /* =======================
+        banner 5
+    ======================= */
+
+  #banner5 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  #b5-text {
+    text-align: left;
+  }
+
+  #banner5 h1 {
+    font-size: 2.25rem;
+  }
+
+  /* =======================
+        banner 5
+======================= */
+  #banner8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #banner7 h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  #b8-text h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+/* large */
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  /* =======================
+        banner 1
+======================= */
+
+  #banner1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 100px;
+  }
+
+  #b1-text {
+    text-align: left;
+  }
+
+  #b1-text h1 {
+    font-size: 78px;
+  }
+
+  #b1-text p {
+    margin-bottom: 50px;
+  }
+
+  /* =======================
+        banner 1
+======================= */
+
+  /* =======================
+        banner 2
+======================= */
+
+  #banner2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #banner2 h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  /* =======================
+        banner 2
+======================= */
+
+  /* =======================
+          banner 3
+    ======================= */
+
+  #banner3 {
+    gap: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #b3-text h1 {
+    font-size: 2.25rem;
+  }
+
+
+  /* =======================
+            banner 3
+    ======================= */
+
+  /* =======================
+              banner 4
+      ======================= */
+  #banner4 h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  /* =======================
+        banner 4
+    ======================= */
+  /* =======================
+        banner 5
+  ======================= */
+  #banner5 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #b5-text {
+    text-align: left;
+  }
+
+  #banner5 h1 {
+    font-size: 2.25rem;
+  }
+
+  /* =======================
+        banner 5
+======================= */
+  #banner8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #banner7 h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  #b8-text h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+/* xl */
+@media screen and (min-width: 1280px) and (max-width: 1536px) {
+
+  /* =======================
+        banner 1
+======================= */
+  #banner1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 100px;
+  }
+
+  #b1-text {
+    text-align: left;
+  }
+
+  #b1-text h1 {
+    font-size: 78px;
+  }
+
+  #b1-text p {
+    margin-bottom: 50px;
+  }
+
+  /* =======================
+        banner 1
+======================= */
+
+  /* =======================
+        banner 2
+======================= */
+
+  #banner2 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #banner2 h1 {
+    font-size: 46px;
+    line-height: 1.26;
+  }
+
+  /* =======================
+        banner 2
+======================= */
+
+  /* =======================
+            banner 3
+    ======================= */
+
+  #banner3 {
+    gap: 110px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  #b3-text h1 {
+    font-size: 46px;
+  }
+
+  /* =======================
+            banner 3
+    ======================= */
+
+  /* =======================
+          banner 4
+  ======================= */
+  #banner4 h1 {
+    font-size: 46px;
+    line-height: 1.26;
+  }
+
+  /* =======================
+          banner 4
+    ======================= */
+
+  /* =======================
+            banner 5
+      ======================= */
+  #banner5 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  #b5-text {
+    text-align: left;
+  }
+
+  #banner5 h1 {
+    font-size: 46px;
+  }
+
+  /* =======================
+            banner 5
+    ======================= */
+
+  #banner8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #banner7 h1 {
+    font-size: 46px;
+    line-height: 1.26;
+  }
+
+  #b8-text h1 {
+    font-size: 46px;
+    line-height: 1.26;
+  }
+}
+
+/* xxl */
+@media screen and (min-width: 1536px) {
+
+  /* =======================
+        banner 1
+======================= */
+  #banner1 {
+    padding-top: 100px;
+  }
+
+  #b1-text {
+    text-align: left;
+  }
+
+  #b1-text h1 {
+    font-size: 90px;
+  }
+
+  #b1-text p {
+    margin-bottom: 50px;
+  }
+
+  /* =======================
+        banner 1
+======================= */
+
+  /* =======================
+        banner 2
+======================= */
+
+  #banner2 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  #banner2 h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  /* =======================
+        banner 2
+======================= */
+
+  /* =======================
+            banner 3
+    ======================= */
+
+  #banner3 {
+    gap: 110px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  #b3-text h1 {
+    font-size: 46px;
+  }
+
+  /* =======================
+          banner 3
+    ======================= */
+
+  /* =======================
+          banner 4
+  ======================= */
+  #banner4 h1 {
+    font-size: 46px;
+    line-height: 1.26;
+  }
+
+  /* =======================
+          banner 4
+  ======================= */
+
+  /* =======================
+              banner 5
+      ======================= */
+
+  #banner5 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  #b5-text {
+    text-align: left;
+  }
+
+  #banner5 h1 {
+    font-size: 46px;
+  }
+
+  /* =======================
+        banner 5
+======================= */
+
+  #banner8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #banner7 h1 {
+    font-size: 46px;
+    line-height: 1.26;
+  }
+
+  #b8-text h1 {
+    font-size: 46px;
+    line-height: 1.26;
+  }
+}
