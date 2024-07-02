@@ -6,6 +6,7 @@
 }
 
 body {
+overflow-x: hidden;
   font-family: var(--inter);
   font-size: 1.125rem;
   color: var(--text-color);
