@@ -6,7 +6,7 @@
 }
 
 body {
-overflow-x: hidden;
+  overflow-x: hidden;
   font-family: var(--inter);
   font-size: 1.125rem;
   color: var(--text-color);
@@ -619,35 +619,7 @@ overflow-x: hidden;
 /* small */
 @media screen and (min-width: 640px) and (max-width: 768px) {
 
-  /* .navbar-collapse {
-    padding-top: 3rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    width: 50%;
-    height: 100%;
-    box-shadow: black 10px 10px 100vw;
-  }
-
-  .navbar-collapse.collapsing {
-    left: -75%;
-    transition: height 0s ease;
-  }
-
-  .navbar-collapse.show {
-    background-color: white !important;
-    left: 0;
-    transition: left 300ms ease-in-out;
-  }
-
-  .navbar-toggler.collapsed~.navbar-collapse {
-    transition: left 500ms ease-in-out;
-  } */
-
-  /* =======================
+/* =======================
         banner 1
 ======================= */
   #banner1 {
@@ -705,34 +677,6 @@ overflow-x: hidden;
 
 /* medium */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-
-  /* .navbar-collapse {
-    padding-top: 3rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    width: 50%;
-    height: 100%;
-    box-shadow: black 10px 10px 100vw;
-  }
-
-  .navbar-collapse.collapsing {
-    left: -75%;
-    transition: height 0s ease;
-  }
-
-  .navbar-collapse.show {
-    background-color: white !important;
-    left: 0;
-    transition: left 300ms ease-in-out;
-  }
-
-  .navbar-toggler.collapsed~.navbar-collapse {
-    transition: left 500ms ease-in-out;
-  } */
 
   /* =======================
         banner 1
@@ -890,8 +834,7 @@ overflow-x: hidden;
           banner 3
     ======================= */
 
-  #banner3 {
-    gap: 5rem;
+    #banner3 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
